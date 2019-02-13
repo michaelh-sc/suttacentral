@@ -68,6 +68,14 @@ class SCMoreMenu extends ReduxMixin(Localized(PolymerElement)) {
         {{localize('Donations')}}
       </paper-item>
     </a>
+        <a class="more-menu-link" href="[[getDiscourseUrl(routeName)]]"
+      title="[[getDiscourseTitle(routeName)]]" target="_blank" rel="noopener noreferrer">
+      <paper-item class="more-menu-paper-item">
+        <iron-icon class="more-menu-icon" icon="sc-iron-icons:forum"></iron-icon>
+        {{localize('Discuss')}}
+      </paper-item>
+    </a>
+     <div class="separator"></div>
     <a class="more-menu-link" href="/offline">
       <paper-item class="more-menu-paper-item">
         <iron-icon class="more-menu-icon pwa-icon" icon="sc-svg-icons:pwa"></iron-icon>
@@ -82,6 +90,7 @@ class SCMoreMenu extends ReduxMixin(Localized(PolymerElement)) {
       <paper-toggle-button id="view_toggler" class="toggle-button" checked="{{compactViewChosen}}"></paper-toggle-button>
       {{localize('SuttaplexCompactView')}}
     </paper-item>
+         <div class="separator"></div>
     <a class="more-menu-link" href="/downloads">
       <paper-item class="more-menu-paper-item">
         <iron-icon class="more-menu-icon" icon="sc-iron-icons:file-download"></iron-icon>
@@ -94,7 +103,6 @@ class SCMoreMenu extends ReduxMixin(Localized(PolymerElement)) {
         {{localize('Languages')}}
       </paper-item>
     </a>
-    <div class="separator"></div>
     <a class="more-menu-link" href="/numbering">
       <paper-item class="more-menu-paper-item">
         <iron-icon class="more-menu-icon" icon="sc-iron-icons:format-list-numbered"></iron-icon>
@@ -132,13 +140,7 @@ class SCMoreMenu extends ReduxMixin(Localized(PolymerElement)) {
         {{localize('About')}}
       </paper-item>
     </a>
-    <a class="more-menu-link" href="[[getDiscourseUrl(routeName)]]"
-      title="[[getDiscourseTitle(routeName)]]" target="_blank" rel="noopener noreferrer">
-      <paper-item class="more-menu-paper-item">
-        <iron-icon class="more-menu-icon" icon="sc-iron-icons:forum"></iron-icon>
-        {{localize('Discuss')}}
-      </paper-item>
-    </a>`;
+`;
   }
 
   static get properties() {
