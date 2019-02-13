@@ -25,7 +25,7 @@ class SCSuttaplexTx extends LitElement {
       <a href="${this.translationUrl}" class="tx ${this.isCompact ? 'compact' : ''}">
         <paper-ripple></paper-ripple>
         <div class="tx-icon">
-          <iron-icon icon="sc-svg-icons:translation"></iron-icon>
+          <iron-icon icon="sc-svg-icons:read"></iron-icon>
         </div>
         <div class="tx-details">
           <span class="tx-creator">${this.translation.author}</span>

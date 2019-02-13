@@ -109,14 +109,14 @@ class SCMoreMenu extends ReduxMixin(Localized(PolymerElement)) {
     </a>
     <a class="more-menu-link" href="/methodology">
       <paper-item class="more-menu-paper-item">
-        <iron-icon class="more-menu-icon" icon="sc-svg-icons:school"></iron-icon>
+        <iron-icon class="more-menu-icon" icon="sc-iron-icons:school"></iron-icon>
         {{localize('Methodology')}}
       </paper-item>
     </a>
     <div class="separator"></div>
     <a class="more-menu-link" href="/acknowledgments">
       <paper-item class="more-menu-paper-item">
-        <iron-icon class="more-menu-icon" icon="sc-svg-icons:people"></iron-icon>
+        <iron-icon class="more-menu-icon" icon="sc-iron-icons:people"></iron-icon>
         {{localize('Acknowledgments')}}
       </paper-item>
     </a>
