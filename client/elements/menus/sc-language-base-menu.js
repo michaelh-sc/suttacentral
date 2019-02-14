@@ -70,9 +70,8 @@ class LanguageBaseMenu extends LitLocalized(LitElement) {
 
   languageTemplate(language) {
     return html`
-      <paper-icon-item class="language-menu-paper-item" id="${language.uid}">
-        <iron-icon class="iso-code-image" title="${language.name}" slot="item-icon" icon="sc-language-icons:${language.iso_code}">
-        </iron-icon>
+      <paper-icon-item class="language-menu-paper-item iso-${language.iso_code}" id="${language.uid}">
+        
 
         <paper-item-body>
           <div class="language-name">${language.name}</div>
