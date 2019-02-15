@@ -412,9 +412,9 @@ class SCHomePage extends SCStaticPage {
               <h2 class="card-title-text">
                 ${this.localize('742e700832d62bb2f6a17592968b4dab')}
               </h2>
-              <div class="image-card-text">
-                ${this.localize('0ae097eff8e01d83a486582e1648d803')}
-              </div>
+              <p class="image-card-text">
+                 ${this.localize('0ae097eff8e01d83a486582e1648d803')}
+              </p>
             </div>
           </paper-card>
           <paper-card class="two-paper-cards paper-cards-no-background second-card transparent-card" elevation="2" image="/img/home-page/contemplatingthemoon-min.jpg" alt="${this.localize('a5172cf2c34de3fc8e2af331ac915ec9')}">
@@ -422,9 +422,9 @@ class SCHomePage extends SCStaticPage {
               <h2 class="card-title-text">
                 ${this.localize('a5172cf2c34de3fc8e2af331ac915ec9')}
               </h2>
-              <div class="image-card-text">
-                ${this.localize('72b2622af85398029ea11349175e83af')}
-              </div>
+              <p class="image-card-text">
+                 ${this.localize('72b2622af85398029ea11349175e83af')}
+              </p>
             </div>
           </paper-card>
           <div>
@@ -522,9 +522,9 @@ class SCHomePage extends SCStaticPage {
               <h2 class="card-title-text">
                 ${this.localize('078365b3da2eb8b34d23c36661309359')}
               </h2>
-              <div class="image-card-text">
-                ${unsafeHTML(this.localize('2e64b76d5549e9dc3e83c5845571322a'))}
-              </div>
+              <p class="image-card-text">
+                 ${unsafeHTML(this.localize('2e64b76d5549e9dc3e83c5845571322a'))}
+              </p>
             </div>
             <div>
               ${unsafeHTML(this.localize('0b689c82a3c57190d06581150a74ae85'))}
@@ -535,9 +535,9 @@ class SCHomePage extends SCStaticPage {
               <h2 class="card-title-text">
                 ${this.localize('149842aa5477edb219ce272ec2aab269')}
               </h2>
-              <div class="image-card-text">
-                ${this.localize('70a49d1ca4c56cd629f76e90d6b6cc0f')}
-              </div>
+              <p class="image-card-text">
+                 ${this.localize('70a49d1ca4c56cd629f76e90d6b6cc0f')}
+              </p>
             </div>
             <div>
               ${unsafeHTML(this.localize('6eff00aea38733ff52246d2aa345be07'))}
