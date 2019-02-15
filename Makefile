@@ -19,9 +19,13 @@ generate-cert:
 
 
 SERVICES := sc-flask sc-nginx sc-swagger sc-arangodb sc-frontend sc-elasticsearch
+SERVICES_LITE := sc-flask sc-nginx sc-swagger sc-frontend sc-arangodb 
 
 run-dev:
 	@$(COMPOSEDEV) up $(SERVICES)
+	
+run-dev-lite:
+	@$(COMPOSEDEV) up $(SERVICES_LITE)
 
 run-dev-no-logs:
 	@$(COMPOSEDEV) up -d $(SERVICES)
