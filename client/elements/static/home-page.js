@@ -407,7 +407,7 @@ class SCHomePage extends SCStaticPage {
           </paper-card>
         </div>
         <div class="row cards">
-          <paper-card class="two-paper-cards paper-cards-no-background first-card transparent-card" elevation="2" image="/img/home-page/becomingone-min.jpg" alt="${this.localize('742e700832d62bb2f6a17592968b4dab')}">
+          <paper-card class="two-paper-cards paper-cards-no-background first-card transparent-card" elevation="2" image="/img/home-page/lostonesway.jpg" alt="${this.localize('742e700832d62bb2f6a17592968b4dab')}">
             <div class="transparent-card-content-wrapper">
               <h2 class="card-title-text">
                 ${this.localize('742e700832d62bb2f6a17592968b4dab')}
