@@ -73,6 +73,7 @@ class SCHomePage extends SCStaticPage {
         @apply --sc-skolar-font-size-md;
         padding: var(--sc-size-lg);
         text-align: center;
+        @apply --sc-serif-font
       }
 
       .button-link {
