@@ -52,13 +52,10 @@ class SCHomePage extends SCStaticPage {
       }
 
       .card-heading {
-        @apply --sc-skolar-font-size-xxl;
         width: 100%;
         background-color: var(--sc-primary-color-medium);
-        color: var(--sc-tertiary-text-color);
-        font-weight: bold;
         line-height: 100%;
-        text-align: right;
+        
       }
 
       .card-content {
@@ -83,10 +80,14 @@ class SCHomePage extends SCStaticPage {
         text-decoration: none;
       }
 
-      .card-heading-text {
+      h2.card-heading-text {
         @apply --sc-sans-font;
+        @apply --sc-skolar-font-size-xxl;
+        color: var(--sc-tertiary-text-color);
+        font-weight: bold;
         padding: var(--sc-size-lg);
-        text-align: center;
+        margin-top: 0;
+        text-align: right;
         direction: rtl;
       }
 
@@ -139,9 +140,12 @@ class SCHomePage extends SCStaticPage {
         margin-top: 1em;
       }
 
-      .card-title-text {
+      h2.card-title-text,
+      h3.card-title-text {
         @apply --paper-font-headline;
         @apply --sc-serif-font;
+        color: var(--sc-primary-text-color);
+        margin-top:0;
       }
 
       .why-we-read {
@@ -223,8 +227,11 @@ class SCHomePage extends SCStaticPage {
       }
 
       .big-card-title {
-        @apply --sc-skolar-font-size-static-subtitle;
+        @apply --paper-font-headline;
         margin-bottom: var(--sc-size-md);
+        @apply --sc-serif-font;
+        color: var(--sc-primary-text-color);
+        margin-top:0;
       }
 
       .center-text {
@@ -384,9 +391,9 @@ class SCHomePage extends SCStaticPage {
           <paper-card elevation="2">
             <div class="card">
               <div class="card-heading">
-                <div class="card-heading-text">
+                <h2 class="card-heading-text">
                   ${unsafeHTML(this.localize('6fa47a464d90ac462faad21974edfb66'))}
-                </div>
+                </h2>
               </div>
               <div class="card-content">
                 <div class="card-content-text">
@@ -402,9 +409,9 @@ class SCHomePage extends SCStaticPage {
         <div class="row cards">
           <paper-card class="two-paper-cards paper-cards-no-background first-card transparent-card" elevation="2" image="/img/home-page/becomingone-min.jpg" alt="${this.localize('742e700832d62bb2f6a17592968b4dab')}">
             <div class="transparent-card-content-wrapper">
-              <div class="card-title-text">
+              <h2 class="card-title-text">
                 ${this.localize('742e700832d62bb2f6a17592968b4dab')}
-              </div>
+              </h2>
               <div class="image-card-text">
                 ${this.localize('0ae097eff8e01d83a486582e1648d803')}
               </div>
@@ -412,9 +419,9 @@ class SCHomePage extends SCStaticPage {
           </paper-card>
           <paper-card class="two-paper-cards paper-cards-no-background second-card transparent-card" elevation="2" image="/img/home-page/contemplatingthemoon-min.jpg" alt="${this.localize('a5172cf2c34de3fc8e2af331ac915ec9')}">
             <div class="transparent-card-content-wrapper">
-              <div class="card-title-text">
+              <h2 class="card-title-text">
                 ${this.localize('a5172cf2c34de3fc8e2af331ac915ec9')}
-              </div>
+              </h2>
               <div class="image-card-text">
                 ${this.localize('72b2622af85398029ea11349175e83af')}
               </div>
@@ -431,9 +438,9 @@ class SCHomePage extends SCStaticPage {
           <paper-card elevation="2">
             <div class="card">
               <div class="card-heading">
-                <div class="card-heading-text smaller-title">
+                <h2 class="card-heading-text smaller-title">
                   ${unsafeHTML(this.localize('80c9f84bfa3911cda919d61934abc0a2'))}
-                </div>
+                </h2>
               </div>
               <div class="card-content-video">
                 <div class="embed-container">
@@ -445,15 +452,15 @@ class SCHomePage extends SCStaticPage {
           </paper-card>
         </div>
         <div class="row">
-          <div class="big-card-title">
+          <h2 class="big-card-title">
             ${this.localize('24cbc4d3253a2779ae4dab326e42659b')}
-          </div>
+          </h2>
           <div class="three-elements-grid">
             <paper-card alt="${this.localize('5392c2400632f879aaa8bceac40a05ce')}" class="three-elements-big paper-card-with-button" elevation="2" image="/img/home-page/burmese_kammavaca.jpg" title="${this.localize('4312510269ff1286ae8beb8ceb193c4b')}">
               <div class="card-content-wrapper no-bottom-padding">
-                <div class="card-title-text">
+                <h3 class="card-title-text">
                   ${this.localize('e30baf2773fd1ff10ac21a7ebd63198d')}
-                </div>
+                </h3>
                 <div class="image-card-text">
                   ${this.localize('31f31787de5aa09d662dfef82b0b686e')}
                 </div>
@@ -464,9 +471,9 @@ class SCHomePage extends SCStaticPage {
             </paper-card>
             <paper-card class="three-elements-small three-elements-first-small full-height paper-card-with-button" elevation="2">
               <div class="card-content-wrapper no-bottom-padding">
-                <div class="card-title-text">
+                <h3 class="card-title-text">
                   ${this.localize('09c18e7d1f00a37ba925092e7a101a05')}
-                </div>
+                </h3>
                 <div class="text-card-text">
                   ${this.localize('45cc0214114c2d971cf2701f842f8926')}
                 </div>
@@ -477,9 +484,9 @@ class SCHomePage extends SCStaticPage {
             </paper-card>
             <paper-card class="three-elements-small three-elements-second-small full-height paper-card-with-button" elevation="2">
               <div class="card-content-wrapper no-bottom-padding">
-                <div class="card-title-text">
+                <h3 class="card-title-text">
                   ${this.localize('ff9331ad058b3717457b73d2bdc51534')}
-                </div>
+                </h3>
                 <div class="image-card-text">
                   ${this.localize('db01f7b42cfc777fd2f2a84d3a6787fa')}
                 </div>
@@ -494,9 +501,9 @@ class SCHomePage extends SCStaticPage {
           <paper-card elevation="2">
             <div class="card">
               <div class="card-heading">
-                <div class="card-heading-text">
+                <h2 class="card-heading-text">
                   ${unsafeHTML(this.localize('091d2f16e012dc0e2eb6db75d4f878c6'))}
-                </div>
+                </h2>
               </div>
               <div class="card-content">
                 <div class="card-content-text">
@@ -512,9 +519,9 @@ class SCHomePage extends SCStaticPage {
         <div class="row cards">
           <paper-card class="two-paper-cards first-card paper-card-with-button" elevation="2" image="/img/home-page/noword-min.jpg" alt="${this.localize('078365b3da2eb8b34d23c36661309359')}">
             <div class="card-content-wrapper">
-              <div class="card-title-text">
+              <h2 class="card-title-text">
                 ${this.localize('078365b3da2eb8b34d23c36661309359')}
-              </div>
+              </h2>
               <div class="image-card-text">
                 ${unsafeHTML(this.localize('2e64b76d5549e9dc3e83c5845571322a'))}
               </div>
@@ -525,9 +532,9 @@ class SCHomePage extends SCStaticPage {
           </paper-card>
           <paper-card class="two-paper-cards second-card paper-card-with-button" elevation="2" image="/img/home-page/listeningtotherain-min.jpg" alt="${this.localize('149842aa5477edb219ce272ec2aab269')}">
             <div class="card-content-wrapper">
-              <div class="card-title-text">
+              <h2 class="card-title-text">
                 ${this.localize('149842aa5477edb219ce272ec2aab269')}
-              </div>
+              </h2>
               <div class="image-card-text">
                 ${this.localize('70a49d1ca4c56cd629f76e90d6b6cc0f')}
               </div>
