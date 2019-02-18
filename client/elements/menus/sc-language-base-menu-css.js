@@ -47,8 +47,8 @@ export const languageBaseMenuCss = html`
       }
 
       .language-menu-paper-item::before {
+        content: attr(id);
         background-color:var(--sc-disabled-text-color);
-
         color: var(--sc-tertiary-text-color);
         font-weight: 800;
         width: var(--sc-size-md-larger);
@@ -61,7 +61,7 @@ export const languageBaseMenuCss = html`
         font-size:14px;
         position:absolute;
         margin-top:1px;
-        --notchSize: 4px;
+        --notchSize: 8px;
         clip-path: 
     polygon(
       0% var(--notchSize), 
@@ -73,172 +73,12 @@ export const languageBaseMenuCss = html`
       var(--notchSize) 100%, 
       0% calc(100% - var(--notchSize))
     );
-      }
-
+}
       #jpn::before, #sld::before, #kln::before{
         letter-spacing: 0;
         font-size: 12px
       }
 
-      #af::before {
-    content: "af";
-}
-
-    #ar::before {
-    content: "ar";
-}
-
-    #au::before {
-    content: "au";
-}
-
-    #bn::before {
-    content: "bn";
-}
-
-    #ca::before {
-    content: "ca";
-}
-
-    #cs::before {
-    content: "cs";
-}
-
-    #de::before {
-    content: "de";
-}
-
-    #en::before {
-    content: "en";
-}
-
-    #ev::before {
-    content: "ev";
-}
-
-    #kln::before {
-    content: "kln";
-}
-
-    #vu::before {
-    content: "vu";
-}
-
-    #es::before {
-    content: "es";
-}
-
-    #fa::before {
-    content: "fa";
-}
-
-    #fi::before {
-    content: "fi";
-}
-
-    #fr::before {
-    content: "fr";
-}
-
-    #he::before {
-    content: "he";
-}
-
-    #hi::before {
-    content: "hi";
-}
-
-    #hu::before {
-    content: "hu";
-}
-
-    #id::before {
-    content: "id";
-}
-
-    #it::before {
-    content: "it";
-}
-
-    #jpn::before {
-    content: "jpn";
-}
-
-    #ko::before {
-    content: "ko";
-}
-
-    #nl::before {
-    content: "nl";
-}
-
-    #no::before {
-    content: "no";
-}
-
-    #pl::before {
-    content: "pl";
-}
-
-    #pt::before {
-    content: "pt";
-}
-
-    #ru::before {
-    content: "ru";
-}
-
-    #si::before {
-    content: "si";
-}
-
-    #sl::before {
-    content: "sl";
-}
-
-    #sld::before {
-    content: "sld";
-}
-
-    #sr::before {
-    content: "sr";
-}
-
-    #sv::before {
-    content: "sv";
-}
-
-    #ta::before {
-    content: "ta";
-}
-
-    #th::before {
-    content: "th";
-}
-
-    #vi::before {
-    content: "vi";
-}
-
-    #zh::before {
-    content: "zh";
-}
-
-    #my::before {
-    content: "my";
-}
-
-    #mr::before {
-    content: "mr";
-}
-
-    #ro::before {
-    content: "ro";
-}
-
-    #la::before {
-    content: "la";
-}
 
 </style>
 `;
