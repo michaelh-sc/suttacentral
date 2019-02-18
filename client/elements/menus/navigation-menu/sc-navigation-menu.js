@@ -5,7 +5,6 @@ import '@polymer/paper-icon-button/paper-icon-button.js';
 import '@polymer/paper-spinner/paper-spinner-lite.js';
 import { API_ROOT } from '../../../constants';
 
-import '../../../img/sc-language-icons.js';
 import { LitLocalized } from '../../addons/localization-mixin';
 import { scNavigationMenuCss } from './sc-navigation-menu-css';
 
@@ -131,9 +130,10 @@ class SCNavigationMenu extends LitLocalized(LitElement) {
     return this.unclickableMenuItems.includes(uid) ? '' : `/${uid}`;
   }
 
-  getLanguageIconName(isoCode) {
-    return `sc-language-icons:${isoCode}`;
+    getLanguageName(isoCode) {
+    return `${isoCode}`;
   }
+
 
   getPrefixedItemName(name, num) {
     return num ? `${num}. ${name}` : name;
@@ -195,11 +195,7 @@ class SCNavigationMenu extends LitLocalized(LitElement) {
                 <li class="nav-menu-item ${groupingLevelItem.yellow_brick_road ? 'yellow-brick' : ''}">
                   <span class="nav-link">${groupingLevelItem.name}</span>
     
-                  ${groupingLevelItem.lang_iso ? html`
-                    <iron-icon class="iso-code-image" title="${groupingLevelItem.lang_name}"
-                      icon="${this.getLanguageIconName(groupingLevelItem.lang_iso)}">
-                    </iron-icon>
-                  ` : ''}
+                 
                   
                   ${groupingLevelItem.children.length > 0 ? html`
                     ${this.expandMoreButtonTemplate}
@@ -225,19 +221,13 @@ class SCNavigationMenu extends LitLocalized(LitElement) {
             <li class="nav-menu-item ${this.selectedItemId === childItem.id || this.parentId === childItem.id ? 'selected' : ''} ${childItem.yellow_brick_road ? 'yellow-brick' : ''}">
               ${listType === 'nav-secondary' ? html`
                 <span class="nav-link">${childItem.name}</span>
-                ${childItem.lang_iso ? html`
-                  <iron-icon class="iso-code-image" title="${childItem.lang_name}"
-                    icon="${this.getLanguageIconName(childItem.lang_iso)}"></iron-icon>
-                ` : ''}
+                
               ` : html`
-                <a class="nav-link link-text-ellipsis" title="${childItem.name}"
+                <a class="nav-link link-text-ellipsis" data-iso="${this.getLanguageName(childItem.lang_iso)}" title="${childItem.name}"
                    href="${this.getSuttaplexUrl(childItem.id)}">
                   ${childItem.name}
                 </a>
-                ${childItem.lang_iso ? html`
-                  <iron-icon class="iso-code-image" title="${childItem.lang_name}"
-                    icon="${this.getLanguageIconName(childItem.lang_iso)}"></iron-icon>
-                ` : ''}
+                
               `}
               
               ${childItem.children && childItem.children.length > 0 ? html`
@@ -263,12 +253,7 @@ class SCNavigationMenu extends LitLocalized(LitElement) {
           <li class="nav-menu-item ${isRootElement ? 'top-menu-item' : ''} ${childItem.id === this.selectedItemId ? 'selected' : ''} ${childItem.yellow_brick_road ? 'yellow-brick' : ''}"
             @click="${() => this.selectChildItem(menuItem)}"
           >
-            ${childItem.lang_iso ? html`
-              <iron-icon class="iso-code-image"
-                title="${childItem.lang_name}" icon="${this.getLanguageIconName(childItem.lang_iso)}">
-              </iron-icon>
-            ` : ''}
-
+            
             <a class="nav-link link-text-ellipsis" title="${childItem.name}"
                style="${this.calculateSubmenuChildrenStyle(menuLevel)}"
                href="${this.getSuttaplexUrl(childItem.id)}">

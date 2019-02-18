@@ -7,7 +7,6 @@ import '@polymer/paper-item/paper-item-body.js';
 import '@polymer/paper-listbox/paper-listbox.js';
 
 import { API_ROOT } from '../../constants.js';
-import '../../img/sc-language-icons.js';
 import { store } from '../../redux-store';
 import { LitLocalized } from '../addons/localization-mixin';
 import { languageBaseMenuCss } from './sc-language-base-menu-css';

@@ -61,9 +61,9 @@ export const languageBaseMenuCss = html`
         font-size:14px;
         position:absolute;
         margin-top:1px;
-        --notchSize: 8px;
+        --notchSize: 4px;
         clip-path: 
-    polygon(
+       polygon(
       0% var(--notchSize), 
       var(--notchSize) 0%, 
       calc(100% - var(--notchSize)) 0%, 
