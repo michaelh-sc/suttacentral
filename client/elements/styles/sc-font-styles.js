@@ -787,14 +787,14 @@ template.innerHTML = `
         @apply --paper-font-common-base;
         @apply --sc-skolar-font-size-md;
         font-weight: 400;
-        line-height: 24px;
+        line-height: 25px;
       };
 
       --sc-paper-font-body-serif: {
         @apply --sc-serif-font;
         @apply --sc-skolar-font-size-md;
         font-weight: 400;
-        line-height: 24px;
+        line-height: 25px;
       };
 
       --sc-all-small-caps: {
